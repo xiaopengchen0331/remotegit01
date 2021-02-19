@@ -1,0 +1,118 @@
+Unit Name
+Python Basics
+Objective
+Function
+what does the following code do?
+> > > def a(b, c, d):
+  pass
+Option C : For parameters to be passed through, functions needs the 'return' statement. Review Complete Python Bootcamp Section 6 Methods and Functions Module 40(Functions)
+
+Objective
+List, Format
+The following code will successfully print the days and then the months?
+> > > days_of_week = ['Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday']
+
+> > > months = ['Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec']
+
+> > > print 'DAYS: {},\rMONTHS: {}'.format(days_of_week, months)
+Option B : Review Complete Python Bootcamp Section 3: Python Object and Data Structure Basics Modules 17(print) and 19(Lists)
+
+Objective
+Class
+What gets printed?
+> > > class Account:
+...   def __init__(self, id):
+...   self.id = id
+...   id = 666
+...
+> > > acc = Account(123)
+> > > print acc.id
+Option C : Review Complete Python Bootcamp Section 8: Object Oriented Programming Module 54(Classes)
+
+Objective
+Descriptor
+What gest printed by the code below?
+> > > class Person:
+...   def __init__(self, id):
+...     self.id = id
+
+> > > steve = Person(100)
+
+> > > steve.__dict__['age'] = 25
+
+> > > print steve.age + len(steve.__dict__)
+Option B : Attributes of a class instance are stored in a dictionary. Review Complete Python Bootcamp Section 8: Object Oriented Programming Module 54(Classes)
+
+Objective
+Splicing
+Fill in the blank with command that will result in the print statement shown.
+> > > a = ‘Ian’
+> > > c = ‘Hey’
+> > > b = ‘I’
+> > > d = ‘am’
+> > > _________________
+HeyIamIan!
+Option D : Review Complete Python Bootcamp Section 3: Python Object and Data Structure Basics Module 17(Print Formatting).
+
+What gets printed?
+> > > def simple_function():
+    """This is a cool simple function that returns 1"""
+> > >     return 1
+
+> > > print simpleFunction.__doc__[10:14]
+Option C : Review Complete Python Bootcamp Section 3: Python Object and Data Structure Basics Modules 15(Strings) and Section 5: Python Statements Module 35(range).
+
+Objective
+Regular Expression
+What gets printed?
+> > > import re
+> > > sum = 0
+
+> > > pattern = 'back'
+> > > if re.match(pattern, 'backup.txt'):
+...   sum += 1
+> > > if re.match(pattern, 'text.back'):
+...   sum += 2
+> > > if re.search(pattern, 'backup.txt'):
+...   sum += 4
+> > > if re.search(pattern, 'text.back'):
+...   sum += 8
+
+> > > print sum
+Option E : Review Complete Python Bootcamp Section 16: Advanced Python Modules Module 95(Regular Expressions)
+
+Objective
+List Comprehension
+What gets printed?
+> > > names1 = ['Amir', 'Barry', 'Charles', 'Dao']
+> > > names2 = [name.lower() for name in names1]
+
+> > > print names2[2][0]
+Option E : Review Complete Python Bootcamp Section 3: Python Object and Data Structure Basics Modules 19(Lists) and Section 5: Python Statements Module 36(List Comprehension).
+
+Objective
+Exceptions
+What gets printed?
+> > > a = 'Python'
+> > > try:
+  ...:   print(a[len(a) + 1])
+  ...: except Exception as e:
+  ...:   raise IndexError('Wrong Index') from e
+Option C : Review Complete Python Bootcamp Section 3: Python Object and Data Structure Basics Modules 15 (Strings) andSection 9:Errors and Exceptions Handling Module 60(Errors and Exceptions)
